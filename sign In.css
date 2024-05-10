@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600&display=swap');
+
+
+:root{
+    --text-color: #444444;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, #f8109f, #61045f);
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    max-width: 800px;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.left{
+    width:45%;
+    
+}
+
+.left img {
+    width: 200px;
+}
+
+.heading {
+    margin-top: 30px;
+    font-size: 25px;
+    color: #666;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+.heading span {
+    display: block; 
+    margin-top: 30px; 
+    color: #1e034e;
+    font-size: 35px;
+    font-weight: bold;
+    line-height: 1.1;
+}
+
+.text {
+    margin-top: 40px;
+    font-size: 20px;
+    color: #dad4d4;
+}
+
+.right{
+    width: 50%;
+    border-left: 2px solid #eceaea;
+    padding-left: 30px;
+}
+
+.right h1{
+    font-size: 35px;
+    color: #3c00a0;
+    font-weight: bold;
+    position: relative;
+    
+}
+
+.right h1::after{
+    content: ' ';
+    width: 75px;
+    height: 4px;
+    border-radius: 3px;
+    background: deeppink;
+    position: absolute;
+    bottom: -12px;
+    transform: translate(-50%);
+    left: 40px;
+}
+
+.input-group{
+    margin-top: 60px;
+}
+
+.inputBox{
+    background: #fff;
+    margin-top: 25px;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    border: 1px solid#c0bbbb;
+    
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 15px 15px;
+    font-size: 15px;
+}
+
+.inputBox i{
+    margin-left: 15px;
+    color: #999;
+}
+
+form p{
+    text-align: right;
+    font-size: 13px;
+    margin-top: 12px;
+}
+
+.btn-field{
+    width: 100%;
+    margin-top: 60px;
+}
+
+.btn-field button{
+    background: deeppink;
+    color: #fff;
+    height: 50px;
+    border-radius: 50px;
+    width: 100%;
+    font-size: 15px;
+    border: 1px solid deeppink;
+}
+
+@media (max-width: 576px){
+
+    body{
+        background: none;
+    }
+
+    .container{
+        flex-direction: column;
+        gap:40px;
+        padding: 20px;
+        font-size: 25px;
+        border-radius: 0%;
+        box-shadow: none;
+        background-color: transparent; 
+        max-width: none;
+    }
+    .left,.right{
+        width: 100%;
+        border: none;
+        padding: 0;
+    }
+}

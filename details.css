@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100%;
+}
+
+.aside {
+    background: linear-gradient(to bottom, #f8109f, #61045f);
+    width: 200px;
+    text-align: center;
+}
+
+.aside img {
+    width: 150px;
+    filter: grayscale(100%) brightness(400%);
+    margin-top: 20px;
+}
+
+#shutdown-btn {
+    margin-top: 160px;
+}
+
+.icons div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    color: #f7f2f2;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.icons h4 {
+    font-size: 16px;
+    margin-top: 10px;
+    font-weight: 300;
+}
+
+.content {
+    flex-grow: 1;
+    padding: 30px 0 0 30px;
+}
+
+.details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 40px;
+}
+
+.user-account {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+
+.user-image img {
+    width: 70px;
+    border-radius: 50%;
+}
+
+.names h3 {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(165, 17, 17);
+}
+
+.names p {
+    font-size: 15px;
+    color: grey;
+}
+
+.address p {
+    padding-left: 160px;
+    font-size: 18px;
+    color: gray;
+    line-height: 1.2;
+}
+
+.condition-btn {
+    margin-top: 30px;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.condition-btn button {
+    background: #e0dfdf;
+    color: black;
+    width: 130px;
+    height: 35px;
+    border-radius: 50px;
+    font-size: 14px;
+    border: 1px solid #e0dfdf;
+    margin-bottom: 15px;
+}
+
+.doctor-details {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 50px;
+    border: 1px solid #e0dfdf;
+    margin: 30px 40px 0 0;
+}
+
+.doctor-details p {
+    font-size: 15px;
+    color: #d4d1d1;
+    padding-left: 20px ;
+}
+
+.doctor-details h3 {
+    font-size: 18px;
+}
+
+.doctor-details button {
+    background-color: lightgray;
+    padding: 15px 15px;
+    border-radius: 30px;
+    border: 1px solid #e0dfdf;
+    width: 150px;
+}
+
+.btn-field {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.btn-field button {
+    border: none;
+    padding: 12px 12px;
+    border-radius: 25px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 180px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.btn-field button:nth-child(1) {
+    background-color: white;
+    color: rgb(48, 47, 47);
+    border: 1px solid #d4d1d1;
+}
+
+.btn-field button:nth-child(2) {
+    background-color: deeppink;
+    border: 1px solid deeppink;
+    color: white;
+    margin-left: -20px;
+}
+
+.table{
+    width:60%;
+    border-collapse: collapse;
+    margin-top: 40px;
+    border: 1px solid #d3d1d1;
+    border-radius: 8px;
+    margin-bottom: 30px;
+
+}
+
+.table thead{
+    background: #f8f5f5;
+}
+
+.table thead tr th{
+    font-size: 14px;
+    padding: 16px;
+    vertical-align: top;
+    font-weight: bold;
+    color: #5c5b5b;
+
+}
+
+.table tbody tr td{
+    font-size: 12px;
+    padding: 13px;
+    text-align: center;
+    font-weight: 600;
+    color: #9b9898;
+}
+
+.table tbody tr td i {
+    color: #f8109f;
+    font-size: 20px;
+}
+
+@media (max-width: 768px){
+
+    aside img{
+        width: 100px;
+    }
+
+    .aside .icons h4{
+        display: none;
+    }
+    .aside .icons div:hover h4{
+        display: block;
+    }
+
+    #shutdown-btn{
+        margin-top: 40px;
+    }
+  
+    .details{
+        font-size: 16px;
+        margin-top: 30px;
+    }
+
+    .address p{
+        font-size: 16px;
+        margin-left: -70px;
+    }
+    .condition-btn{
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .doctor-details{
+        justify-content: center;
+        padding: 20px;
+    }
+    
+    .doctor-details h3{
+        font-size: 15px;
+        margin: 10px 0px 10px 20px;
+        align-items: center;
+    }
+
+    .btn-field{
+        justify-content: center;
+        gap: 15px
+    }
+    .btn-field button:nth-child(2) {
+        margin: 0;
+    }
+
+    .table{
+         margin-left: 30px;
+         
+    }
+    .table thead{
+        display: none;
+    }
+
+    .table tr,
+    .table td{
+        display: block;
+        width:100%;
+        justify-content: center;
+    }
+
+    .table tr{
+        margin-bottom: 1rem;
+    }
+
+    .table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    
+
+    .table tbody tr td{
+        text-align: right;
+        position: relative;
+
+    }
+
+    .table td::before {
+        content: attr(data-table);
+        position: absolute;
+        left: 0;
+        width: 50%;
+        text-align: left;
+        padding-left: 1.2rem;
+    }
+}
